@@ -50,7 +50,7 @@
   {
     "name": "PopAI",
     "categories": ["AI", "Requires Sign Up", "Free Tier"],
-    "link": "https://www.popai.pro/",
+    "link": "https://popai.pro/",
     "lastUpdated": "2025-08-13",
     "description": "AI presentation generator.",
     "logoPath": "/popai.svg"
@@ -122,7 +122,7 @@
   {
     "name": "Coze",
     "categories": ["AI", "Requires Sign Up", "Free Tier"],
-    "link": "https://www.coze.com/",
+    "link": "https://coze.com/",
     "lastUpdated": "2025-08-13",
     "description": "Tool to let you create AI bots and agents to connect to your apps.",
     "logoPath": "/coze.png"
@@ -146,7 +146,7 @@
   {
     "name": "Mindgrasp",
     "categories": ["AI"],
-    "link": "https://www.mindgrasp.ai/",
+    "link": "https://mindgrasp.ai/",
     "lastUpdated": "2025-08-13",
     "description": "AI powered notes, flashcards, quizzes, and a personal tutor.",
     "logoPath": ""
@@ -154,7 +154,7 @@
   {
     "name": "Whitescreen",
     "categories": ["Miscellaneous"],
-    "link": "https://www.whitescreen.online/",
+    "link": "https://whitescreen.online/",
     "lastUpdated": "2025-08-13",
     "description": "Make fake screens like e.g. windows update screen.",
     "logoPath": ""
@@ -168,52 +168,60 @@
     "logoPath": ""
   },
   {
-    "name": "",
-    "categories": [""],
-    "link": "",
+    "name": "BusinessPhoto.AI",
+    "categories": ["AI", "Paid"],
+    "link": "https://businessphoto.ai/",
     "lastUpdated": "2025-08-13",
-    "description": "",
+    "description": "AI professional/business headshot generator.",
+    "logoPath": "/businessphoto.png"
+  },
+  {
+    "name": "ChefGPT",
+    "categories": ["AI", "Requires Sign Up", "Free Tier", "Food", "Health"],
+    "link": "https://chefgpt.xyz/",
+    "lastUpdated": "2025-08-13",
+    "description": "Achieve your health goals faster with ChefGPT. AI-powered recipes and calorie tracking help you stay on track and see results-up to 4x quicker.",
+    "logoPath": "/chefgpt.png"
+  },
+  {
+    "name": "Meshy",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://meshy.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI tool to create 3D from text prompts.",
+    "logoPath": "/meshy.png"
+  },
+  {
+    "name": "Filmora Wondershare",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://filmora.wondershare.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI-powered video editting tool.",
+    "logoPath": "/filmora.svg"
+  },
+  {
+    "name": "Lumalabs",
+    "categories": ["AI", "Paid"],
+    "link": "https://lumalabs.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI video editting.",
     "logoPath": ""
   },
   {
-    "name": "",
-    "categories": [""],
-    "link": "",
+    "name": "GetMagical",
+    "categories": ["AI", "Paid"],
+    "link": "https://getmagical.com/",
     "lastUpdated": "2025-08-13",
-    "description": "",
-    "logoPath": ""
+    "description": "Agentic employee.",
+    "logoPath": "/getmagical.png"
   },
   {
-    "name": "",
-    "categories": [""],
-    "link": "",
+    "name": "Kittl",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://www.kittl.com/",
     "lastUpdated": "2025-08-13",
-    "description": "",
-    "logoPath": ""
-  },
-  {
-    "name": "",
-    "categories": [""],
-    "link": "",
-    "lastUpdated": "2025-08-13",
-    "description": "",
-    "logoPath": ""
-  },
-  {
-    "name": "",
-    "categories": [""],
-    "link": "",
-    "lastUpdated": "2025-08-13",
-    "description": "",
-    "logoPath": ""
-  },
-  {
-    "name": "",
-    "categories": [""],
-    "link": "",
-    "lastUpdated": "2025-08-13",
-    "description": "",
-    "logoPath": ""
+    "description": "AI image generator.",
+    "logoPath": "/kittl.png"
   },
   {
     "name": "",
