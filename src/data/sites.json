@@ -1,7 +1,7 @@
 [
   {
     "name": "Flash Museum",
-    "categories": ["Games"],
+    "categories": ["Games", "Free"],
     "link": "https://flashmuseum.org",
     "lastUpdated": "2025-08-13",
     "description": "Flash Museum is a project archiving flash games and animations and making them playable again on modern browsers.",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Gamma",
-    "categories": ["AI"],
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
     "link": "https://gamma.app/",
     "lastUpdated": "2025-08-13",
     "description": "Gamma is your AI design partner for effortless presentations, websites, social media posts, and more-so you can focus on what you do best.",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Notable People",
-    "categories": ["People"],
+    "categories": ["People", "Free"],
     "link": "https://tjukanovt.github.io/notable-people",
     "lastUpdated": "2025-08-13",
     "description": "A site that displays a map of the most famous individual from each location worldwide.",
@@ -25,7 +25,7 @@
   },
   {
     "name": "UIBall",
-    "categories": ["UI"],
+    "categories": ["UI", "Free"],
     "link": "https://uiball.com/ldrs",
     "lastUpdated": "2025-08-13",
     "description": "A collection of free loader spinners.",
@@ -33,7 +33,7 @@
   },
   {
     "name": "UIVerse",
-    "categories": ["UI"],
+    "categories": ["UI", "Free"],
     "link": "https://uiverse.io/",
     "lastUpdated": "2025-08-13",
     "description": "A collection of free UI elements.",
@@ -41,7 +41,7 @@
   },
   {
     "name": "StockimgAI",
-    "categories": ["AI"],
+    "categories": ["AI", "Paid"],
     "link": "https://stockimg.ai/",
     "lastUpdated": "2025-08-13",
     "description": "AI image generator.",
@@ -49,10 +49,178 @@
   },
   {
     "name": "PopAI",
-    "categories": ["AI"],
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
     "link": "https://www.popai.pro/",
     "lastUpdated": "2025-08-13",
     "description": "AI presentation generator.",
     "logoPath": "/popai.svg"
+  },
+  {
+    "name": "Playground",
+    "categories": ["AI", "Free Tier"],
+    "link": "https://playground.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI presentation generator.",
+    "logoPath": ""
+  },
+  {
+    "name": "Open Peeps",
+    "categories": ["Art", "Free"],
+    "link": "https://openpeeps.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "A hand-drawn illustration library.",
+    "logoPath": "/openpeeps.png"
+  },
+  {
+    "name": "Lummi",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://lummi.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "\"Free\" AI Stock Image, Illustrations, and 3D",
+    "logoPath": "/lummi.png"
+  },
+  {
+    "name": "LogoDiffusion",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://logodiffusion.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "Create high-quality logos fast with generative AI. 45+ styles. Vector output. No design skills needed.",
+    "logoPath": "/logodiffusion.png"
+  },
+  {
+    "name": "Anara",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://anara.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "Quickly understand papers, books, and audio, organize findings, and write well-cited documents.",
+    "logoPath": "/anara.png"
+  },
+  {
+    "name": "REImagine Home",
+    "categories": ["AI", "Paid"],
+    "link": "https://reimaginehome.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI image alteration for your home.",
+    "logoPath": "/reimaginehome.png"
+  },
+  {
+    "name": "Immersity",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://immersity.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI tool to make 3D experiences from 2D images.",
+    "logoPath": "/immersity.jpg"
+  },
+  {
+    "name": "TinyWow",
+    "categories": ["AI", "Free"],
+    "link": "https://tinywow.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "A collection of a lot of free tools for file, image, and video editting.",
+    "logoPath": "/tinywow.png"
+  },
+  {
+    "name": "Coze",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://www.coze.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "Tool to let you create AI bots and agents to connect to your apps.",
+    "logoPath": "/coze.png"
+  },
+  {
+    "name": "10web",
+    "categories": ["AI", "Paid"],
+    "link": "https://10web.io/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI website builder.",
+    "logoPath": "/10web.png"
+  },
+  {
+    "name": "Ztype",
+    "categories": ["Games"],
+    "link": "https://zty.pe/",
+    "lastUpdated": "2025-08-13",
+    "description": "Typing game where you shoot at asteroids by typing their words.",
+    "logoPath": "/ztype.png"
+  },
+  {
+    "name": "Mindgrasp",
+    "categories": ["AI"],
+    "link": "https://www.mindgrasp.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI powered notes, flashcards, quizzes, and a personal tutor.",
+    "logoPath": ""
+  },
+  {
+    "name": "Whitescreen",
+    "categories": ["Miscellaneous"],
+    "link": "https://www.whitescreen.online/",
+    "lastUpdated": "2025-08-13",
+    "description": "Make fake screens like e.g. windows update screen.",
+    "logoPath": ""
+  },
+  {
+    "name": "Repurpose",
+    "categories": ["Automation", "Paid"],
+    "link": "https://repurpose.io/",
+    "lastUpdated": "2025-08-13",
+    "description": "Automatically reposts your videos to multiple platforms.",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
+  },
+  {
+    "name": "",
+    "categories": [""],
+    "link": "",
+    "lastUpdated": "2025-08-13",
+    "description": "",
+    "logoPath": ""
   }
 ]
