@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   output: "standalone",
   images: {
-    remotePatterns: [new URL("https://placehold.co/**")],
+    remotePatterns: [new URL("https://placehold.co/48@2x.png?text=Missing")],
   },
 };
 
