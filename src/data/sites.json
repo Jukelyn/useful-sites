@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Flash Museum",
+    "categories": ["Games"],
+    "link": "https://flashmuseum.org",
+    "lastUpdated": "2025-08-13",
+    "description": "Flash Museum is a project archiving flash games and animations and making them playable again on modern browsers.",
+    "logoPath": "/flashmuseum.png"
+  },
+  {
+    "name": "Gamma",
+    "categories": ["AI"],
+    "link": "https://gamma.app/",
+    "lastUpdated": "2025-08-13",
+    "description": "Gamma is your AI design partner for effortless presentations, websites, social media posts, and more-so you can focus on what you do best.",
+    "logoPath": ""
+  },
+  {
+    "name": "Notable People",
+    "categories": ["People"],
+    "link": "https://tjukanovt.github.io/notable-people",
+    "lastUpdated": "2025-08-13",
+    "description": "A site that displays a map of the most famous individual from each location worldwide.",
+    "logoPath": "/github-mark-white.svg"
+  },
+  {
+    "name": "UIBall",
+    "categories": ["UI"],
+    "link": "https://uiball.com/ldrs",
+    "lastUpdated": "2025-08-13",
+    "description": "A collection of free loader spinners.",
+    "logoPath": "/uiball.svg"
+  },
+  {
+    "name": "UIVerse",
+    "categories": ["UI"],
+    "link": "https://uiverse.io/",
+    "lastUpdated": "2025-08-13",
+    "description": "A collection of free UI elements.",
+    "logoPath": "/uiverse.png"
+  },
+  {
+    "name": "StockimgAI",
+    "categories": ["AI"],
+    "link": "https://stockimg.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI image generator.",
+    "logoPath": ""
+  },
+  {
+    "name": "PopAI",
+    "categories": ["AI"],
+    "link": "https://www.popai.pro/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI presentation generator.",
+    "logoPath": "/popai.svg"
+  }
+]
