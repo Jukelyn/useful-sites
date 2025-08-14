@@ -1,0 +1,14 @@
+---
+services:
+  useful-sites:
+    container_name: useful-sites
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      - main_sites
+
+networks:
+  main_sites:
+    external: true
