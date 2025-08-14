@@ -256,10 +256,25 @@
     "logoPath": "/carcarekiosk.jpg"
   },
   {
+    "name": "HomeByMe",
+    "categories": ["Life", "Requires Sign Up", "Free Tier"],
+    "link": "https://home.by.me/",
+    "lastUpdated": "2025-08-14",
+    "description": "Web App to design your home.",
+    "logoPath": ""
+  },
+  {
+    "name": "Krea",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://krea.ai/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI image generator.",
+    "logoPath": "/krea.png"
+  },
+  {
     "name": "",
     "categories": [""],
     "link": "",
-    "lastUpdated": "2025-08-13",
     "description": "",
     "logoPath": ""
   }
