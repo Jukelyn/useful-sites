@@ -15,6 +15,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Useful Sites",
   description: "A collection of useful sites",
+  openGraph: {
+    title: "Useful Sites",
+    description: "A collection of useful sites",
+    images: ["https://sites.jukelyn.com/embed_photo"],
+    url: "https://sites.jukelyn.com",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Useful Sites",
+    description: "A collection of useful sites",
+    images: ["https://sites.jukelyn.com/embed_photo.png"],
+  },
 };
 
 export default function RootLayout({
