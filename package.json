@@ -1,7 +1,8 @@
 {
   "name": "useful-sites",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "packageManager": "pnpm@10.14.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
