@@ -39,7 +39,7 @@ export function SiteCard({ site }: SiteCardProps) {
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-2">
           <div className="flex-1 min-w-0">
-            <CardTitle className="text-lg font-semibold truncate">
+            <CardTitle className="text-lg font-semibold wrap-break-word">
               {site.name}
             </CardTitle>
             <CardDescription className="text-sm text-muted-foreground">

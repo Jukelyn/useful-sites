@@ -224,6 +224,30 @@
     "logoPath": "/kittl.png"
   },
   {
+    "name": "GeoSpy",
+    "categories": ["AI", "Paid"],
+    "link": "https://geospy.ai/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI location search from images.",
+    "logoPath": "/geospy.png"
+  },
+  {
+    "name": "LostGamer",
+    "categories": ["Games", "Free"],
+    "link": "https://lostgamer.io/",
+    "lastUpdated": "2025-08-13",
+    "description": "Like Geoguessr",
+    "logoPath": "/lostgamer.svg"
+  },
+  {
+    "name": "Meta Demo Lab's Animate Sketch",
+    "categories": ["AI", "Paid"],
+    "link": "https://sketch.metademolab.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "AI tool by Meta to transform static sketches into fun animations.",
+    "logoPath": ""
+  },
+  {
     "name": "",
     "categories": [""],
     "link": "",
