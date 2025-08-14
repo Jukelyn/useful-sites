@@ -43,6 +43,7 @@ export function SearchFilters({
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           className="pl-10"
+          autoFocus
         />
       </div>
 
