@@ -90,7 +90,7 @@ export default function Home() {
               <a
                 className="underline"
                 rel="_blank"
-                href="https://www.instagram.com/setupsai/"
+                href="https://instagram.com/setupsai/"
               >
                 @setupsai
               </a>
