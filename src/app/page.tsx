@@ -81,7 +81,11 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <TextReveal variant="stagger" className="text-4xl font-bold mt-4">
+          <TextReveal
+            variant="stagger"
+            className="text-4xl font-bold mt-4"
+            startOnView={false} // some browsers have issues with this
+          >
             useful sites that you should know.
           </TextReveal>
           <p className="text-lg text-muted-foreground max-w-md mx-auto">
