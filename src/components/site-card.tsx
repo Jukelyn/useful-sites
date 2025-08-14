@@ -49,7 +49,7 @@ export function SiteCard({ site }: SiteCardProps) {
           <div className="flex-shrink-0">
             <Image
               src={
-                site.logoPath || "https://placehold.co/48@2x.png?text=Missing"
+                site.logoPath || "/missing.png"
               }
               placeholder={"empty"}
               width={58}
