@@ -1,0 +1,52 @@
+---
+name: CI-SFTP
+
+on:
+  workflow_run:
+    workflows: ["CI-Lint"]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-via-sftp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create .env file from Base 64
+        run: |
+          echo "${{ secrets.ENV_FILE_B64 }}" | base64 -d > .env
+        shell: bash
+
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          username: ${{ secrets.SSH_USER }}
+          server: ${{ secrets.SSH_SERVER }}
+          port: ${{ secrets.SSH_SERVER_PORT }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          local_path: ./.env
+          remote_path: ${{ secrets.REMOTE_PATH }}
+          delete_remote_files: true
+
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          username: ${{ secrets.SSH_USER }}
+          server: ${{ secrets.SSH_SERVER }}
+          port: ${{ secrets.SSH_SERVER_PORT }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          local_path: ./
+          # Ex: /path/flask_app/ places the content into flask_app directory
+          remote_path: ${{ secrets.REMOTE_PATH }}
+          delete_remote_files: false  # In previous step!
+          # sftp args
+          sftpArgs: "-o ConnectTimeout=5"
+          rsyncArgs: "--exclude=node_modules --exclude=.git* --exclude=*.log"
