@@ -248,6 +248,14 @@
     "logoPath": ""
   },
   {
+    "name": "CarCareKiosk",
+    "categories": ["Life"],
+    "link": "https://carcarekiosk.com/",
+    "lastUpdated": "2025-08-13",
+    "description": "Collection of vehicles and information on repairs and such.",
+    "logoPath": "/carcarekiosk.jpg"
+  },
+  {
     "name": "",
     "categories": [""],
     "link": "",
