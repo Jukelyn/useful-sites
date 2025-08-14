@@ -48,9 +48,7 @@ export function SiteCard({ site }: SiteCardProps) {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src={
-                site.logoPath || "/missing.png"
-              }
+              src={site.logoPath || "/missing.png"}
               placeholder={"empty"}
               width={58}
               height={58}
