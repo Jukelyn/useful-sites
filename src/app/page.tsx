@@ -143,7 +143,7 @@ export default function Home() {
               </svg>
               <h3 className="text-lg font-medium mb-2">No sites found</h3>
               <p>
-                Try adjusting your search terms or filters to find what you're
+                Try adjusting your search terms or filters to find what you&apos;re
                 looking for.
               </p>
             </div>

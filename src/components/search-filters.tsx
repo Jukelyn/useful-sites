@@ -99,7 +99,7 @@ export function SearchFilters({
       {/* Active Filters Summary */}
       {(selectedCategories.length > 0 || searchQuery) && (
         <div className="text-sm text-muted-foreground">
-          {searchQuery && <span>Searching for "{searchQuery}"</span>}
+          {searchQuery && <span>Searching for &quot;{searchQuery}&quot;</span>}
           {searchQuery && selectedCategories.length > 0 && <span> • </span>}
           {selectedCategories.length > 0 && (
             <span>
