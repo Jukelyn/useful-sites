@@ -15,9 +15,10 @@ import { Site } from "@/types/site";
 
 interface SiteCardProps {
   site: Site;
+  onCategoryToggle: (category: string) => void;
 }
 
-export function SiteCard({ site }: SiteCardProps) {
+export function SiteCard({ site, onCategoryToggle }: SiteCardProps) {
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {
       year: "numeric",
@@ -66,7 +67,12 @@ export function SiteCard({ site }: SiteCardProps) {
 
         <div className="flex flex-wrap gap-1">
           {site.categories.map((category) => (
-            <Badge key={category} variant={"outline"} className="text-xs">
+            <Badge
+              key={category}
+              variant={"outline"}
+              className="text-xs cursor-pointer"
+              onClick={() => onCategoryToggle(category)}
+            >
               {category}
             </Badge>
           ))}
