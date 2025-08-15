@@ -345,7 +345,7 @@
   },
   {
     "name": "GptExcel",
-    "categories": ["AI", "Automation"],
+    "categories": ["AI", "Automation", "Requires Sign Up", "Free Tier"],
     "link": "https://gptexcel.uk/",
     "lastUpdated": "2025-08-14",
     "description": "AI for your spreadsheets.",
