@@ -404,7 +404,7 @@
     "categories": ["Requires Sign Up", "Free Tier"],
     "link": "https://typefaceanimator.com/",
     "lastUpdated": "2025-08-14",
-    "description": "Text animations with various fonts",
+    "description": "Text animations with various fonts.",
     "logoPath": "/typefaceanimator.png"
   },
   {
@@ -422,5 +422,173 @@
     "lastUpdated": "2025-08-14",
     "description": "AI image generator and editor.",
     "logoPath": "/photoeditor.svg"
+  },
+  {
+    "name": "Webcam Effects",
+    "categories": ["Miscellaneous", "Free"],
+    "link": "https://webcameffects.app",
+    "lastUpdated": "2025-08-15",
+    "description": "Extension to have webcam effects.",
+    "logoPath": "/webcameffects.png"
+  },
+  {
+    "name": "Kuasarvideo",
+    "categories": ["AI", "Paid"],
+    "link": "https://kuasarvideo.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI video analyzer.",
+    "logoPath": "/kuaservideo.png"
+  },
+  {
+    "name": "KickResume",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://kickresume.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI resume builder.",
+    "logoPath": "/kickresume.png"
+  },
+  {
+    "name": "Blaze AI",
+    "categories": ["AI", "Paid"],
+    "link": "https://blaze.ai/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI marketing and content creation.",
+    "logoPath": ""
+  },
+  {
+    "name": "Aithor",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://aithor.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI author.",
+    "logoPath": ""
+  },
+  {
+    "name": "Make my drive fun",
+    "categories": ["Miscellaneous", "Free"],
+    "link": "https://makemydrivefun.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "Shows interesting things along a route.",
+    "logoPath": ""
+  },
+  {
+    "name": "Chatbase",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://chatbase.co/",
+    "lastUpdated": "2025-08-15",
+    "description": "Online tool to create AI agents.",
+    "logoPath": "/chatbase.png"
+  },
+  {
+    "name": "Blanka",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://blanka.ai/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI image generator and designing.",
+    "logoPath": "/blanka.png"
+  },
+  {
+    "name": "ShapeFactory",
+    "categories": ["Art", "Free"],
+    "link": "https://shapefactory.co/",
+    "lastUpdated": "2025-08-15",
+    "description": "Free color combos, gradients, and duo-tone image conversions.",
+    "logoPath": "/shapefactory.png"
+  },
+  {
+    "name": "Ssemble",
+    "categories": ["AI", "Paid"],
+    "link": "https://ssemble.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI shorts generator (from video).",
+    "logoPath": "/ssemble.png"
+  },
+  {
+    "name": "MuscleWiki",
+    "categories": ["Life", "Health", "Free Tier"],
+    "link": "https://musclewiki.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "Great site to choose muscles and get workouts for those muscles.",
+    "logoPath": ""
+  },
+  {
+    "name": "ArtFlow",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://app.artflow.ai/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI character, image, video, and story creator.",
+    "logoPath": ""
+  },
+  {
+    "name": "Geo FS",
+    "categories": ["Miscellaneous", "Free Tier"],
+    "link": "https://geo-fs.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "Flight simulator with a global environment generated from satellite images and digital geographic data",
+    "logoPath": ""
+  },
+  {
+    "name": "Womp",
+    "categories": ["Art", "Requires Sign Up", "Free Tier"],
+    "link": "https://womp.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "3D model maker and priting service.",
+    "logoPath": "/womp.png"
+  },
+  {
+    "name": "EDraw Wondershare",
+    "categories": ["Art", "AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://edraw.wondershare.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI-powered diagraming tool.",
+    "logoPath": "/edraw.svg"
+  },
+  {
+    "name": "Map this",
+    "categories": ["Requires Sign Up", "Free Tier"],
+    "link": "https://map-this.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "PDF to diagram generator.",
+    "logoPath": "/mapthis.png"
+  },
+  {
+    "name": "FaceSwapper",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://faceswapper.ai/",
+    "lastUpdated": "2025-08-15",
+    "description": "AI face, clothes, and gender swapper and generator.",
+    "logoPath": "/faceswapper.svg"
+  },
+  {
+    "name": "RxResume",
+    "categories": ["Requires Sign Up", "Free", "Life"],
+    "link": "https://rxresu.me/",
+    "lastUpdated": "2025-08-15",
+    "description": "Free and open source resume builder. (Also self-hostable).",
+    "logoPath": "/rxresume.svg"
+  },
+  {
+    "name": "The True Size",
+    "categories": ["Miscellaneous"],
+    "link": "https://thetruesize.com/",
+    "lastUpdated": "2025-08-15",
+    "description": "Select and compare various places' sizes accurately.",
+    "logoPath": ""
+  },
+  {
+    "name": "Eagle",
+    "categories": ["AI", "Paid"],
+    "link": "https://en.eagle.cool/",
+    "lastUpdated": "2025-08-15",
+    "description": "File organization tool and extension.",
+    "logoPath": "/eagle.png"
+  },
+  {
+    "name": "Keepa",
+    "categories": ["Miscellaneous", "Free"],
+    "link": "https://keepa.com",
+    "lastUpdated": "2025-08-15",
+    "description": "Amazon price tracker and notifier extension.",
+    "logoPath": "/keepa.png"
   }
 ]
