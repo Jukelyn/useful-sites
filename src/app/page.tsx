@@ -93,19 +93,6 @@ export default function Home() {
           >
             useful sites that you should know.
           </TextReveal>
-          <p className="text-lg text-muted-foreground max-w-md mx-auto">
-            credits to{" "}
-            {
-              <a
-                className="underline"
-                rel="_blank"
-                href="https://instagram.com/setupsai/"
-              >
-                @setupsai
-              </a>
-            }{" "}
-            on Instagram as these are sites that I collected from his videos.
-          </p>
         </div>
 
         <div className="mb-8 max-w-4xl mx-auto">
@@ -158,6 +145,20 @@ export default function Home() {
             </div>
           </div>
         )}
+        <p className="mt-4 text-lg text-muted-foreground mx-auto text-center">
+          Credits to{" "}
+          {
+            <a
+              className="underline"
+              rel="_blank"
+              href="https://instagram.com/setupsai/"
+            >
+              @setupsai
+            </a>
+          }{" "}
+          on Instagram as a lot of these are sites that I collected from his
+          videos.
+        </p>
       </div>
     </div>
   );
