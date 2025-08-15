@@ -93,7 +93,7 @@
     "link": "https://anara.com/",
     "lastUpdated": "2025-08-13",
     "description": "Quickly understand papers, books, and audio, organize findings, and write well-cited documents.",
-    "logoPath": "/anara.png"
+    "logoPath": ""
   },
   {
     "name": "REImagine Home",
@@ -509,7 +509,7 @@
     "link": "https://musclewiki.com/",
     "lastUpdated": "2025-08-15",
     "description": "Great site to choose muscles and get workouts for those muscles.",
-    "logoPath": ""
+    "logoPath": "/musclewiki.png"
   },
   {
     "name": "ArtFlow",
