@@ -237,11 +237,7 @@ export function TextReveal({
   const shouldAnimate = startOnView ? isInView : true;
 
   // Split text into words or characters
-  const elements = wordLevel
-    ? children
-        .split(" ")
-        .map((word, i, arr) => (i < arr.length - 1 ? `${word} ` : word))
-    : children.split("");
+  const elements = wordLevel ? children.split(" ") : children.split("");
 
   // Update container variants with custom stagger delay
   const customContainerVariants = {
@@ -308,13 +304,33 @@ export function TextReveal({
         >
           {children}
         </motion.span>
+      ) : wordLevel ? (
+        elements.map((word, index) => (
+          <React.Fragment key={index}>
+            <MotionComponent
+              className="inline"
+              variants={customItemVariants}
+              style={{
+                transformOrigin:
+                  variant === "rotate" ? "center center" : undefined,
+                willChange: "transform, opacity",
+                WebkitBackfaceVisibility: "hidden",
+                backfaceVisibility: "hidden",
+                WebkitTransform: "translate3d(0,0,0)",
+                transform: "translate3d(0,0,0)",
+                isolation: "isolate",
+              }}
+            >
+              {word}
+            </MotionComponent>
+            {index < elements.length - 1 && " "}
+          </React.Fragment>
+        ))
       ) : (
-        elements.map((element, index) => (
+        elements.map((char, index) => (
           <MotionComponent
             key={index}
-            className={cn("inline-block", {
-              "whitespace-pre": !wordLevel,
-            })}
+            className="inline-block whitespace-pre"
             variants={customItemVariants}
             style={{
               display: "inline-block",
@@ -328,7 +344,7 @@ export function TextReveal({
               isolation: "isolate",
             }}
           >
-            {element === " " ? "\u00A0" : element}
+            {char === " " ? "\u00A0" : char}
           </MotionComponent>
         ))
       )}
