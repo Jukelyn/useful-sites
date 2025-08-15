@@ -94,43 +94,44 @@ export default function Home() {
     setSelectedCategories([]);
   };
 
-  const getPageNumbers = () => {
-    const pages = [];
-    if (totalPages <= 7) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      // Show first 2, last 2, current ±1, with ellipsis
-      if (currentPage <= 4) {
-        pages.push(1, 2, 3, 4, 5, "ellipsis", totalPages - 1, totalPages);
-      } else if (currentPage >= totalPages - 3) {
-        pages.push(
-          1,
-          2,
-          "ellipsis",
-          totalPages - 4,
-          totalPages - 3,
-          totalPages - 2,
-          totalPages - 1,
-          totalPages
-        );
-      } else {
-        pages.push(
-          1,
-          2,
-          "ellipsis",
-          currentPage - 1,
-          currentPage,
-          currentPage + 1,
-          "ellipsis",
-          totalPages - 1,
-          totalPages
-        );
-      }
+  function useResponsivePageNumbers(currentPage: number, totalPages: number) {
+    const [maxVisible, setMaxVisible] = useState(5);
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 640) setMaxVisible(3);
+        else if (window.innerWidth < 1024) setMaxVisible(5);
+        else setMaxVisible(Math.min(7, totalPages));
+      };
+
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, [totalPages]);
+
+    let start = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let end = start + maxVisible - 1;
+
+    if (end > totalPages) {
+      end = totalPages;
+      start = Math.max(1, end - maxVisible + 1);
     }
+
+    const pages: (number | "ellipsis")[] = [];
+    if (start > 1) {
+      pages.push(1);
+      if (start > 2) pages.push("ellipsis");
+    }
+    for (let i = start; i <= end; i++) {
+      pages.push(i);
+    }
+    if (end < totalPages) {
+      if (end < totalPages - 1) pages.push("ellipsis");
+      pages.push(totalPages);
+    }
+
     return pages;
-  };
+  }
 
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages && page !== currentPage) {
@@ -149,6 +150,8 @@ export default function Home() {
 
   const totalPages = Math.ceil(filteredAndSortedSites.length / itemsPerPage);
 
+  const pageNumbers = useResponsivePageNumbers(currentPage, totalPages);
+
   return (
     <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8 max-w-7xl">
@@ -160,13 +163,15 @@ export default function Home() {
         <div className="text-center mb-1">
           <TextReveal
             variant="stagger"
-            className="text-4xl font-bold mt-4 shadow-2xl"
+            className="text-4xl font-bold mt-4 md:shadow-2xl"
             startOnView={false} // some browsers have issues with this
+            wordLevel={true}
+            duration={6}
           >
             useful sites that you should know.
           </TextReveal>
         </div>
-        <div className="flex text-center justify-center mb-4 text-muted-foreground font-light">
+        <div className="lg:flex text-center justify-center mb-4 text-muted-foreground font-light">
           <p>currently at </p>
           <CountingNumber
             className="mx-1"
@@ -193,78 +198,86 @@ export default function Home() {
 
         {paginatedSites.length > 0 ? (
           <>
-            <Pagination className="mb-8">
-              <PaginationContent>
+            <Pagination className="mb-8 w-full">
+              <PaginationContent className="flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide sm:justify-center">
+                {/* First */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === 1}
                     onClick={() => handlePageChange(1)}
                   >
                     <Link href="#">
-                      <ChevronFirst className="rtl:rotate-180" />
+                      <ChevronFirst className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
 
-                {/* Previous page */}
+                {/* Prev */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === 1}
                     onClick={() => handlePageChange(currentPage - 1)}
                   >
                     <Link href="#">
-                      <ChevronLeft className="rtl:rotate-180" />
+                      <ChevronLeft className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
 
                 {/* Page numbers */}
-                {getPageNumbers().map((page, idx) =>
-                  page === "ellipsis" ? (
-                    <PaginationItem key={`ellipsis-${idx}`}>
-                      <PaginationEllipsis />
-                    </PaginationItem>
-                  ) : (
-                    <PaginationItem key={page}>
-                      <Button
-                        variant={page === currentPage ? "outline" : "ghost"}
-                        asChild
-                        onClick={() => handlePageChange(page as number)}
-                      >
-                        <Link href="#">{page}</Link>
-                      </Button>
-                    </PaginationItem>
-                  )
-                )}
+                <div className="hidden sm:flex">
+                  {pageNumbers.map((page, idx) =>
+                    page === "ellipsis" ? (
+                      <PaginationItem key={`ellipsis-${idx}`}>
+                        <PaginationEllipsis />
+                      </PaginationItem>
+                    ) : (
+                      <PaginationItem key={page}>
+                        <Button
+                          size="sm"
+                          variant={page === currentPage ? "outline" : "ghost"}
+                          asChild
+                          onClick={() => handlePageChange(page as number)}
+                        >
+                          <Link href="#">{page}</Link>
+                        </Button>
+                      </PaginationItem>
+                    )
+                  )}
+                </div>
 
-                {/* Next page */}
+                {/* Next */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === totalPages}
                     onClick={() => handlePageChange(currentPage + 1)}
                   >
                     <Link href="#">
-                      <ChevronRight className="rtl:rotate-180" />
+                      <ChevronRight className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
 
-                {/* Last page */}
+                {/* Last */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === totalPages}
                     onClick={() => handlePageChange(totalPages)}
                   >
                     <Link href="#">
-                      <ChevronLast className="rtl:rotate-180" />
+                      <ChevronLast className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
@@ -281,79 +294,86 @@ export default function Home() {
               ))}
             </div>
 
-            <Pagination className="mt-8">
-              <PaginationContent>
-                {/* First page */}
+            <Pagination className="mb-8 w-full">
+              <PaginationContent className="flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide sm:justify-center">
+                {/* First */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === 1}
                     onClick={() => handlePageChange(1)}
                   >
                     <Link href="#">
-                      <ChevronFirst className="rtl:rotate-180" />
+                      <ChevronFirst className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
 
-                {/* Previous page */}
+                {/* Prev */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === 1}
                     onClick={() => handlePageChange(currentPage - 1)}
                   >
                     <Link href="#">
-                      <ChevronLeft className="rtl:rotate-180" />
+                      <ChevronLeft className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
 
                 {/* Page numbers */}
-                {getPageNumbers().map((page, idx) =>
-                  page === "ellipsis" ? (
-                    <PaginationItem key={`ellipsis-${idx}`}>
-                      <PaginationEllipsis />
-                    </PaginationItem>
-                  ) : (
-                    <PaginationItem key={page}>
-                      <Button
-                        variant={page === currentPage ? "outline" : "ghost"}
-                        asChild
-                        onClick={() => handlePageChange(page as number)}
-                      >
-                        <Link href="#">{page}</Link>
-                      </Button>
-                    </PaginationItem>
-                  )
-                )}
+                <div className="hidden sm:flex">
+                  {pageNumbers.map((page, idx) =>
+                    page === "ellipsis" ? (
+                      <PaginationItem key={`ellipsis-${idx}`}>
+                        <PaginationEllipsis />
+                      </PaginationItem>
+                    ) : (
+                      <PaginationItem key={page}>
+                        <Button
+                          size="sm"
+                          variant={page === currentPage ? "outline" : "ghost"}
+                          asChild
+                          onClick={() => handlePageChange(page as number)}
+                        >
+                          <Link href="#">{page}</Link>
+                        </Button>
+                      </PaginationItem>
+                    )
+                  )}
+                </div>
 
-                {/* Next page */}
+                {/* Next */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === totalPages}
                     onClick={() => handlePageChange(currentPage + 1)}
                   >
                     <Link href="#">
-                      <ChevronRight className="rtl:rotate-180" />
+                      <ChevronRight className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
 
-                {/* Last page */}
+                {/* Last */}
                 <PaginationItem>
                   <Button
+                    size="icon"
                     variant="ghost"
                     asChild
                     disabled={currentPage === totalPages}
                     onClick={() => handlePageChange(totalPages)}
                   >
                     <Link href="#">
-                      <ChevronLast className="rtl:rotate-180" />
+                      <ChevronLast className="w-4 h-4 rtl:rotate-180" />
                     </Link>
                   </Button>
                 </PaginationItem>
