@@ -62,7 +62,9 @@ export function SiteCard({ site, onCategoryToggle }: SiteCardProps) {
 
       <CardContent className="flex-1 flex flex-col gap-4">
         <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-          {site.description}
+          {site.description.match(/[.!?]$/)
+            ? site.description
+            : site.description + "."}
         </p>
 
         <div className="flex flex-wrap gap-1">
