@@ -272,6 +272,150 @@
     "logoPath": "/krea.png"
   },
   {
+    "name": "Keyboard Simulator",
+    "categories": ["Miscellaneous"],
+    "link": "https://keyboardsimulator.xyz/",
+    "lastUpdated": "2025-08-14",
+    "description": "A site to design and test virtual 3D keyboards.",
+    "logoPath": "/keyboardsimulator.png"
+  },
+  {
+    "name": "Predis",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://predis.ai/",
+    "lastUpdated": "2025-08-14",
+    "description": "Make AI ads, creatives, video ads, UGC avatar videos & product ads. Boost CTRs and ROAS with our AI ad generator. Keep your social accounts active with AI auto-posting.",
+    "logoPath": "/predis.png"
+  },
+  {
+    "name": "Inkarnate",
+    "categories": ["Art", "Requires Sign Up", "Free Tier"],
+    "link": "https://inkarnate.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "Create game-style maps.",
+    "logoPath": "/inkarnate.jpg"
+  },
+  {
+    "name": "Invideo",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://invideo.io/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI video generator.",
+    "logoPath": "/invideo.png"
+  },
+  {
+    "name": "Claid",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://claid.ai/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI product image generator.",
+    "logoPath": ""
+  },
+  {
+    "name": "Hireflow",
+    "categories": ["AI", "Free"],
+    "link": "https://hireflow.net/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI resume parsing and scoring.",
+    "logoPath": ""
+  },
+  {
+    "name": "Arcadespot",
+    "categories": ["Games"],
+    "link": "https://arcadespot.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "Collection of free online games.",
+    "logoPath": "/arcadespot.jpg"
+  },
+  {
+    "name": "Radio Garden",
+    "categories": ["Miscellaneous"],
+    "link": "https://radio.garden/",
+    "lastUpdated": "2025-08-14",
+    "description": "A globe with radio stations from various places.",
+    "logoPath": ""
+  },
+  {
+    "name": "HuggingFace",
+    "categories": ["AI", "Free", "Paid"],
+    "link": "https://huggingface.co/",
+    "lastUpdated": "2025-08-14",
+    "description": "Hugging Face is a platform and open-source community focused on democratizing and advancing artificial intelligence. Tools, models, and resources for building, deploying, and sharing AI models, with a strong emphasis on collaboration and open-source development.",
+    "logoPath": "/huggingface.png"
+  },
+  {
+    "name": "GptExcel",
+    "categories": ["AI", "Automation"],
+    "link": "https://gptexcel.uk/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI for your spreadsheets.",
+    "logoPath": ""
+  },
+  {
+    "name": "Freepik",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://freepik.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI tools for image, video, and audio.",
+    "logoPath": "/freepik.png"
+  },
+  {
+    "name": "VideoToBlog",
+    "categories": ["AI", "Paid"],
+    "link": "https://videotoblog.ai/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI video to text tool.",
+    "logoPath": "/videotoblog.jpg"
+  },
+  {
+    "name": "Simplified",
+    "categories": ["AI", "Automation", "Paid"],
+    "link": "https://simplified.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI marketing and social media.",
+    "logoPath": "/simplified.png"
+  },
+  {
+    "name": "Podcastle",
+    "categories": ["AI", "Requires Sign Up", "Free Tier"],
+    "link": "https://podcastle.ai/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI audio and video editing.",
+    "logoPath": "/podcastle.png"
+  },
+  {
+    "name": "Framer",
+    "categories": ["Requires Sign Up", "Free Tier"],
+    "link": "https://framer.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "Website builder.",
+    "logoPath": "/framer.png"
+  },
+  {
+    "name": "BeforeIPlay",
+    "categories": ["Games", "Free"],
+    "link": "https://beforeiplay.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "Wiki for games that tells you things you should know before you play a video game.",
+    "logoPath": ""
+  },
+  {
+    "name": "Typeface Animator",
+    "categories": ["Requires Sign Up", "Free Tier"],
+    "link": "https://typefaceanimator.com/",
+    "lastUpdated": "2025-08-14",
+    "description": "Text animations with various fonts",
+    "logoPath": "/typefaceanimator.png"
+  },
+  {
+    "name": "Jitter",
+    "categories": ["Requires Sign Up", "Free Tier"],
+    "link": "https://jitter.video/",
+    "lastUpdated": "2025-08-14",
+    "description": "Animations library.",
+    "logoPath": ""
+  },
+  {
     "name": "",
     "categories": [""],
     "link": "",
