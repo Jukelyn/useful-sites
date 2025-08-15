@@ -414,5 +414,13 @@
     "lastUpdated": "2025-08-14",
     "description": "Animations library.",
     "logoPath": ""
+  },
+  {
+    "name": "Photoeditor",
+    "categories": ["Free Tier"],
+    "link": "https://photoeditor.ai/",
+    "lastUpdated": "2025-08-14",
+    "description": "AI image generator and editor.",
+    "logoPath": "/photoeditor.svg"
   }
 ]
