@@ -6,6 +6,7 @@ import { SearchFilters } from "@/components/search-filters";
 import sitesData from "@/data/sites.json";
 import { Site } from "@/types/site";
 import { TextReveal } from "@/components/ui/text-reveal";
+import { GradientBackground } from "@/components/ui/gradient-background";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -77,8 +78,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8 max-w-7xl">
+        <GradientBackground
+          className="from-slate-900 via-gray-900 to-slate-950 -z-10"
+          transition={{ duration: 35, ease: "easeInOut", repeat: Infinity }}
+        />
         {/* Header */}
         <div className="text-center mb-8">
           <TextReveal

@@ -35,7 +35,7 @@ export function SiteCard({ site }: SiteCardProps) {
   };
 
   return (
-    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow">
+    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow bg-transparent backdrop-blur-3xl">
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-2">
           <div className="flex-1 min-w-0">
@@ -66,7 +66,7 @@ export function SiteCard({ site }: SiteCardProps) {
 
         <div className="flex flex-wrap gap-1">
           {site.categories.map((category) => (
-            <Badge key={category} variant="secondary" className="text-xs">
+            <Badge key={category} variant={"outline"} className="text-xs">
               {category}
             </Badge>
           ))}

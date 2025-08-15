@@ -49,11 +49,11 @@ export function SearchFilters({
 
       {/* Sort and Clear Filters */}
       <div className="flex items-center justify-between gap-4">
-        <Select value={sortBy} onValueChange={onSortChange}>
+        <Select value={sortBy} onValueChange={onSortChange} defaultValue="name">
           <SelectTrigger className="w-48">
             <SelectValue placeholder="Sort by..." />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="bg-transparent backdrop-blur-xl">
             <SelectItem value="name">Name (A-Z)</SelectItem>
             <SelectItem value="name-desc">Name (Z-A)</SelectItem>
             <SelectItem value="updated">Recently Updated</SelectItem>
@@ -86,7 +86,7 @@ export function SearchFilters({
               <Badge
                 key={category}
                 variant={isSelected ? "default" : "outline"}
-                className="cursor-pointer hover:bg-primary/80 transition-colors"
+                className="cursor-pointer hover:bg-blue-300/60 transition-colors"
                 onClick={() => onCategoryToggle(category)}
               >
                 {category}
