@@ -21,6 +21,7 @@ import sitesData from "@/data/sites.json";
 import { Site } from "@/types/site";
 import { TextReveal } from "@/components/ui/text-reveal";
 import { GradientBackground } from "@/components/ui/gradient-background";
+import { CountingNumber } from "@/components/ui/counting-number";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -156,7 +157,7 @@ export default function Home() {
           transition={{ duration: 35, ease: "easeInOut", repeat: Infinity }}
         />
         {/* Header */}
-        <div className="text-center mb-4">
+        <div className="text-center mb-1">
           <TextReveal
             variant="stagger"
             className="text-4xl font-bold mt-4 shadow-2xl"
@@ -164,6 +165,17 @@ export default function Home() {
           >
             useful sites that you should know.
           </TextReveal>
+        </div>
+        <div className="flex text-center justify-center mb-4 text-muted-foreground font-light">
+          <p>currently at </p>
+          <CountingNumber
+            className="mx-1"
+            duration={8}
+            from={0}
+            to={sites.length}
+            startOnView={false} // some browsers have issues with this
+          />
+          <p> sites with more being added every day!</p>
         </div>
 
         <div className="mb-2 max-w-3xl mx-auto">
