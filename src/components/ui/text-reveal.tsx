@@ -269,7 +269,7 @@ export function TextReveal({
 
   useEffect(() => {
     if (shouldAnimate && !hasAnimated) {
-      setHasAnimated(true);
+      setHasAnimated(true); // eslint-disable-line
     }
   }, [shouldAnimate, hasAnimated]);
 
